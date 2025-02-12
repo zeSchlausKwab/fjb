@@ -1,13 +1,14 @@
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
 import cron from "node-cron";
+import { Layout } from "./components/Layout";
 import { ndkService } from "./services/ndk";
 import { publishService } from "./services/publish";
 
 const app = new Hono();
 
 app.get("/", (c) => {
-  return c.text("Hello Hono!");
+  return c.html(Layout());
 });
 
 const handleWeekday = async () => {

@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@hono/node-server':
-        specifier: ^1.13.8
+        specifier: 1.13.8
         version: 1.13.8(hono@4.7.0)
       '@nostr-dev-kit/ndk':
         specifier: 2.11.0
@@ -18,7 +18,7 @@ importers:
         specifier: ^16.4.7
         version: 16.4.7
       hono:
-        specifier: ^4.6.20
+        specifier: 4.7.0
         version: 4.7.0
       node-cron:
         specifier: 3.0.3
