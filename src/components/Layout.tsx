@@ -3,10 +3,10 @@ import { html } from "hono/html";
 export const Layout = () => html`
   <html>
     <head>
-      <title>fiatjabBuzz Bot</title>
+      <title>fiatfBuzz Bot</title>
     </head>
     <body>
-      <h1>fiatjabBuzz (fjb) - Nostr Cron Bot</h1>
+      <h1>fiatjafBuzz (fjb) - Nostr Cron Bot</h1>
       <p>A simple bot that posts scheduled messages to Nostr.</p>
 
       <h2>Schedule</h2>
