@@ -17,9 +17,12 @@ class NDKService {
 
     this.ndk = new NDK({
       explicitRelayUrls: [
+        "wss://nos.lol",
+        "wss://nostr.land",
+        "wss://nostr.wine",
+        "wss://purplerelay.com",
         "wss://relay.damus.io",
-        "wss://relay.nostr.band",
-        // Add more relays as needed
+        "wss://relay.snort.social",
       ],
       signer,
     });
