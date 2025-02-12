@@ -1,4 +1,4 @@
-# Nostr Cron Bot
+# Nostr Cron Bot - fiatjabBuzz (fjb)
 
 A simple bot that posts scheduled messages to Nostr.
 
