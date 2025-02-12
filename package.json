@@ -6,10 +6,14 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.13.8",
-    "hono": "^4.6.20"
+    "@nostr-dev-kit/ndk": "2.11.0",
+    "dotenv": "^16.4.7",
+    "hono": "^4.6.20",
+    "node-cron": "3.0.3"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
+    "@types/node-cron": "3.0.3",
     "tsx": "^4.7.1"
   }
 }
