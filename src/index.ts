@@ -12,12 +12,16 @@ app.get("/", (c) => {
 
 const handleWeekday = async () => {
   console.log("Running weekday task:", new Date().toISOString());
-  await publishService.publishText("It's a weekday! 🏢");
+  await publishService.publishText(
+    "GM nostr:npub180cvv07tjdrrgpa0j7j7tmnyl2yr6yr7l8j4s3evf6u64th6gkwsyjh6w6"
+  );
 };
 
 const handleWeekend = async () => {
   console.log("Running weekend task:", new Date().toISOString());
-  await publishService.publishText("Weekend time! 🎉");
+  await publishService.publishText(
+    "gfy nostr:npub180cvv07tjdrrgpa0j7j7tmnyl2yr6yr7l8j4s3evf6u64th6gkwsyjh6w6🎉"
+  );
 };
 
 await ndkService.ndk.connect();
@@ -28,11 +32,11 @@ cron.schedule("*/10 * * * * *", () => {
   // handleWeekday();
 });
 
-cron.schedule("0 * * * 1-5", () => {
+cron.schedule("0 9 * * 1-5", () => {
   handleWeekday();
 });
 
-cron.schedule("0 * * * 0,6", () => {
+cron.schedule("0 11 * * 0,6", () => {
   handleWeekend();
 });
 
