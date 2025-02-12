@@ -21,7 +21,7 @@ const handleWeekday = async () => {
 const handleWeekend = async () => {
   console.log("Running weekend task:", new Date().toISOString());
   await publishService.publishText(
-    "gfy nostr:npub180cvv07tjdrrgpa0j7j7tmnyl2yr6yr7l8j4s3evf6u64th6gkwsyjh6w6🎉"
+    "gfy nostr:npub180cvv07tjdrrgpa0j7j7tmnyl2yr6yr7l8j4s3evf6u64th6gkwsyjh6w6"
   );
 };
 
